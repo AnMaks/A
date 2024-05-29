@@ -6,6 +6,7 @@ from gui import display_main_window, apply_settings
 from translations import translate
 
 
+
 def check_credentials(username, password):
     try:
         conn = get_db_connection()
@@ -21,6 +22,7 @@ def check_credentials(username, password):
         print(f"Error checking credentials: {e}")
         messagebox.showerror("Error", f"Error checking credentials: {e}")
         return False
+
 
 
 def register_user(username, password):
